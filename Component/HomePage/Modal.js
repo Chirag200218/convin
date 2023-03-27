@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import style from './Home.module.scss'
-import {storage} from '../../utils/Fireconnect';
-import { db } from '../../utils/FireConnect'
+import {db ,storage} from '../../utils/FireConnect'
 import {getDownloadURL, ref,uploadBytesResumable} from 'firebase/storage';
 import ReactPlayer from "react-player";
 import { useSelector } from 'react-redux';
