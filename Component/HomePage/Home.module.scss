@@ -1,0 +1,316 @@
+.App{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   
+}
+.MainBar{
+    height: 100%;
+    width: 85%;
+    padding-top: 30px;
+    position: relative;
+    
+    background-color: #ebebeb;
+    .createCard{
+        margin: 0px auto;
+        width: 360px;
+        height: 60px;
+        font-size: 36px;
+        display: flex;
+        background-color: #eeeeee;
+        border-radius: 35px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border: 1px solid purple;
+        background-color: #f5f2f2;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        img{
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+        img:hover{
+            scale:1.1;
+            
+        }
+    }
+}
+
+.sideBar{
+    height: 100%;
+    width: 18%;
+    padding-left: 20px;
+    background-color: black;
+    color:white;
+     padding-top: 20px;
+    div{
+        font-size: 24px;
+        padding: 2px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    img:hover{
+        scale:1.2;
+    }
+}
+.add{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    cursor: pointer;
+    p{
+        font-size: 29px;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+    }
+    img:hover{
+        scale:1.1;
+    }
+}
+
+.input{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    // border:1px solid red;
+    width: 100%;
+    input{
+        height: 40px;
+        width: 75%;
+        padding: 2px;
+    }
+    button{
+        height: 40px;
+        width:20%;
+        margin-left: 10px;
+    }
+}
+
+
+.createModal{
+    min-height: 500px;
+    max-height: 550px;
+    width: 600px;
+    overflow: scroll;
+    // border: 1px solid green;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 15%;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    p{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    textarea,input,select{
+        min-height: 60px;
+        width: 70%;
+        font-size: 20px;
+        margin: 10px 0px;
+        padding: 8px;
+    }
+    button{
+        width: 50%;
+        height: 50px;
+        border-radius: 35px;
+        font-size: 24px;
+        margin-top: 30px;
+        cursor:pointer;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+//----------CArd CSS---------------------------------
+.MainCat{
+    height: 100%;
+    width: 85%;
+    padding-top: 30px;
+    // position: relative;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    align-self: start;
+    justify-content: center;
+}
+.cardBox{
+    height: 300px;
+    width: 340px;
+    // border: 1px solid red;
+    overflow: hidden;
+    margin: 20px 25px;
+    padding-bottom: 8px;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    background-color: #f6f3f3;
+    img{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        padding: 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    img:hover{
+        scale: 1.2;
+    }
+    .video{
+        width: 100%;
+        height: 65%;
+        cursor: pointer;
+    }
+    .aboutCard{
+        padding: 8px;
+    }
+}
+
+.swaping{
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    background-color: white;
+    z-index: 1009;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 4px;
+    overflow-y: scroll;
+    p{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        height: 20px;
+        cursor: pointer;
+    }
+    p:hover{
+        scale: 1.1;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+//------------video box css----------------
+.videoBox{
+    position: absolute;
+    height: fit-content;
+    width: 700px;
+    position: absolute;
+    z-index: 1001;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    // border: 1px solid red;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 10px;
+    img{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 12.5px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    p{
+        display: flex;
+        padding-left: 10px;
+    }
+}
+.blur{
+    position: absolute;
+    top: 0px;
+    width: 117vw;
+    height: 100vh;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+
+}
+
+
+//------------------history css-----------------------------------
+.historyTab{
+
+    width: 100%;
+    height: 90%;
+    // border: 1px solid red;
+    padding: 20px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .allTab{
+        overflow: scroll;
+        height: 95%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+.visitTab{
+    margin: 20px 0px;
+    height: 100px;
+    width: 80%;
+    display: flex;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    .video{
+        height: 100%;
+        width: 250px;
+        background-color: black;
+    }
+    .aboutVis{
+        height: 100%;
+        width: fit-content;
+        padding: 10px;
+        p{
+            margin: 5px 0px;
+        }
+    }
+    .timeBox{
+        position: absolute;
+        right: 0px;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p{
+            word-wrap: break-word;
+        }
+    }
+}
